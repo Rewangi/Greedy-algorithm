@@ -7,7 +7,7 @@ int make_changes(int*coins, int n, int money){
     int ans = 0;
     while(money > 0){
     int index = upper_bound(coins , coins+n , money) -1 - coins;
-   // cout<< coins[index]<<"+";
+   // cout<< coins[index]<<"+";// this will print all the coins .
     money = money - coins[index];
     ans++;
 }
